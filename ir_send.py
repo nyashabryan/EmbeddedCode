@@ -4,6 +4,8 @@
 import RPi.GPIO as GPIO # import the RPIO.GPIO module
 
 import time # Import the time module 
+
+
 CARRIER_OUT = 2
 SIGNAL_OUT = 3
 CARRIER_FREQ = 38000
@@ -47,3 +49,5 @@ def main():
         GPIO.cleanup()
     PWM.stop()
     GPIO.cleanup()
+
+main()
